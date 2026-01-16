@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loadAnimal"
+    android:layout_width="match_parent"
+    tools:context=".Load_Animal"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/backgroundAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_primary_dark"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgAnimal"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/ic_penguin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/ic_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/white"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        tools:ignore="ContentDescription"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+    <include layout="@layout/item_loading"/>
+</FrameLayout>
