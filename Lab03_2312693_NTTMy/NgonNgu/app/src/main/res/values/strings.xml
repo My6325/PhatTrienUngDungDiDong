@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NgonNgu</string>
+    <string name="name">Xin chào</string>
+    <string name="email">Email</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="sign_in">ĐĂNG NHẬP</string>
+    <string name="sing_up">Không có tài khoản. Vui lòng đăng ký</string>
+</resources>
