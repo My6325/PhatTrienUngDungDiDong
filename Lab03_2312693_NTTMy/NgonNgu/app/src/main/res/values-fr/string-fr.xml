@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NgonNgu</string>
+    <string name="name">accueil</string>
+    <string name="email">adresse e-mail</string>
+    <string name="pass">mot de passe</string>
+    <string name="sign_in">CONNEXION</string>
+    <string name="sing_up">Ne pas avoir un compte? signer</string>
+</resources>
