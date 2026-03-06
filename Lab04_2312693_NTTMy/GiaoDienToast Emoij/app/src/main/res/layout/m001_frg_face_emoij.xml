@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_emoji" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6000000"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="30dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_face1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/angry"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/iv_face2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/sad"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/iv_face3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/cute"
+                tools:ignore="ContentDescription" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_face4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/smile"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/iv_face5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/cry"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/iv_face6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/sick"
+                tools:ignore="ContentDescription" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_face7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/wow"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/iv_face8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/laugh"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/iv_face9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_radius"
+                android:padding="10dp"
+                android:src="@drawable/sleep"
+                tools:ignore="ContentDescription" />
+        </TableRow>
+        <Button
+            android:id="@+id/btn_random"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Hiển thị ngẫu nhiên"
+            android:textSize="18sp"
+            android:backgroundTint="#FF9800"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</FrameLayout>
