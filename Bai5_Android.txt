@@ -1,0 +1,34 @@
+1/ Alpha
+android:duration="1000": Thời gian để thực hiện xong một lượt hiệu ứng 
+android:fromAlpha="1.0": Độ trong suốt tại thời điểm bắt đầu là 1.0. Trong Android, thang đo alpha chạy từ 0.0 đến 1.0. Mức 1.0 nghĩa là đối tượng hiển thị rõ ràng 100%
+android:toAlpha="0.0": Độ trong suốt tại thời điểm kết thúc là 0.0
+android:repeatCount="infinite": Số lần lặp lại hiệu ứng là vô hạn (infinite), dừng khi code hoặc chuyển màn hình
+android:repeatMode="reverse": Chế độ lặp lại là đảo ngược
+--> Chu trình sẽ diễn ra như sau: Ban đầu đối tượng mờ dần từ 1.0 xuống 0.0 (mất 1 giây). Sau đó, nhờ chế độ reverse, nó sẽ chạy ngược lại từ 0.0 lên 1.0
+
+2/ Scale
+android:fromXScale="1" và android:fromYScale="1": Kích thước ban đầu theo chiều ngang (X) và chiều dọc (Y) là 1. Số 1 ở đây có nghĩa là 100% (giữ nguyên kích thước gốc của đối tượng)
+android:toXScale="2" và android:toYScale="2": Kích thước kết thúc theo chiều ngang (X) và dọc (Y) là 2. Số 2 có nghĩa là 200% (đối tượng sẽ được phóng to lên gấp đôi so với ban đầu).
+android:pivotX="50%" và android:pivotY="50%": Đây là điểm tâm (trọng tâm) để thực hiện việc phóng to/thu nhỏ.
+	+Giá trị 50% nghĩa là điểm tâm nằm ở chính giữa đối tượng (cả theo chiều ngang và dọc). Khi phóng to, đối tượng sẽ phình ra đều về mọi hướng từ tâm.
+	(Lưu ý: Nếu bạn không có 2 dòng này, mặc định Android sẽ lấy điểm tâm là góc trên cùng bên trái (tọa độ 0,0), khi đó đối tượng sẽ chỉ phóng to lệch về phía dưới bên phải).
+android:repeatCount="infinite": Lặp lại hiệu ứng vô hạn lần.
+android:repeatMode="reverse": Chế độ lặp đảo ngược.
+--> Bắt đầu ở kích thước gốc -> phình to ra gấp đôi đều từ tâm (trong 1 giây) -> co lại về kích thước gốc (trong 1 giây) -> tiếp tục phình to ra...
+
+3/ Rotate
+android:fromDegrees="0": Góc xoay tại thời điểm bắt đầu là 0 độ (giữ nguyên hướng gốc của đối tượng).
+android:toDegrees="360": Góc xoay tại thời điểm kết thúc là 360 độ (tương đương với việc xoay trọn vẹn một vòng tròn).
+android:pivotX="50%" và android:pivotY="50%": Tọa độ tâm điểm (trục xoay). Giá trị 50% cho cả X và Y có nghĩa là đối tượng sẽ xoay quanh điểm chính giữa của chính nó (giống như chong chóng xoay quanh trục giữa). Nếu không có 2 dòng này, nó sẽ xoay quanh góc trên cùng bên trái.
+android:repeatCount="infinite": Lặp lại hiệu ứng vô hạn lần.
+android:repeatMode="reverse": Chế độ lặp đảo ngược.
+--> Đối tượng sẽ xoay theo chiều kim đồng hồ từ 0 đến 360 độ (mất 1 giây). Sau đó, do dùng reverse, nó sẽ xoay ngược chiều kim đồng hồ từ 360 độ về lại 0 độ (mất thêm 1 giây nữa). Quá trình xoay qua xoay lại này sẽ diễn ra liên tục không ngừng.
+
+4/ Translate
+android:fromXDelta="0": Vị trí bắt đầu theo trục X (chiều ngang). Giá trị 0 có nghĩa là đối tượng xuất phát ngay tại vị trí ban đầu của nó.
+android:toXDelta="200": Vị trí kết thúc theo trục X. Giá trị 200 có nghĩa là đối tượng sẽ dịch chuyển sang phía bên phải 200 pixel so với vị trí gốc. (Lưu ý: Nếu bạn để số âm, ví dụ -200, nó sẽ di chuyển sang phía bên trái).
+android:repeatCount="infinite": Số lần lặp lại hiệu ứng là vô hạn.
+android:repeatMode="reverse": Chế độ lặp lại đảo ngược.
+--> Đối tượng sẽ trượt từ vị trí hiện tại sang phải 200 pixel trong vòng 1 giây. Sau đó sẽ trượt ngược lại từ phải về đúng vị trí cũ (mất thêm 1 giây). Quá trình cứ thế lặp đi lặp lại tạo thành hiệu ứng chạy qua chạy lại giống như con lắc đồng hồ nằm ngang.
+------------
+- android:textAllCaps="true": ép chữ viết hoa 
