@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/app_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/txtLength"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/textbox_hint"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spnLengthUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_equivalent"
+        android:background="@color/green"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:id="@+id/lblNauticalMile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_nautical_mile"
+                    android:textSize="18sp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:id="@+id/lblMile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_mile"
+                    android:textSize="18sp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:id="@+id/lblKilometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_kilometer"
+                    android:textSize="18sp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:id="@+id/lblLi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_li"
+                    android:textSize="18sp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:id="@+id/lblMeter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_meter"
+                    android:textSize="18sp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:id="@+id/lblYard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_yard"
+                    android:textSize="18sp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:id="@+id/lblFoot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_foot"
+                    android:textSize="18sp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow android:padding="10dp">
+                <TextView
+                    android:id="@+id/lblInch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_inch"
+                    android:textSize="18sp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Sử dụng MaterialComponents để hỗ trợ tốt nhất cho DarkActionBar và các bài Lab cũ -->
+    <style name="Base.Theme.ChuongTrinhDoiTien" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.ChuongTrinhDoiTien" parent="Base.Theme.ChuongTrinhDoiTien" />
+</resources>

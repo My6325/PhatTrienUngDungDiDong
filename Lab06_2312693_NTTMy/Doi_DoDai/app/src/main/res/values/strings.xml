@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Đổi đơn vị đo chiều dài</string>
+    <string name="textbox_hint">Nhập chiều dài</string>
+    <string name="header_equivalent">Tương đương với</string>
+    <string name="unit_nautical_mile">Hải lý</string>
+    <string name="unit_mile">Dặm</string>
+    <string name="unit_kilometer">Kilometer</string>
+    <string name="unit_li">Lý</string>
+    <string name="unit_meter">Met</string>
+    <string name="unit_yard">Yard</string>
+    <string name="unit_foot">Foot</string>
+    <string name="unit_inch">Inches</string>
+</resources>
