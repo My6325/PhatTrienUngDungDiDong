@@ -32,3 +32,18 @@ android:repeatMode="reverse": Chế độ lặp lại đảo ngược.
 --> Đối tượng sẽ trượt từ vị trí hiện tại sang phải 200 pixel trong vòng 1 giây. Sau đó sẽ trượt ngược lại từ phải về đúng vị trí cũ (mất thêm 1 giây). Quá trình cứ thế lặp đi lặp lại tạo thành hiệu ứng chạy qua chạy lại giống như con lắc đồng hồ nằm ngang.
 ------------
 - android:textAllCaps="true": ép chữ viết hoa 
+- Trong thẻ <shape>:
++ <gradient> - Thiết lập màu bắt đầu và kết thúc của gradient cùng với loại (bán kính, tuyến tính, quét)
++ <stroke> - Thiết lập màu sắc và độ rộng của đường viền
++ <solid> - Thiết lập màu nền cho nút
++ <corners> - Thiết lập bán kính
+- <gradient
+        android:endColor="@color/green"
+        android:gradientRadius="30dp"
+        android:type="radial" (android:angle="135": chỉ định hướng chuyển màu)
+        android:startColor="@color/yellow" />
++ android:type="radial": Xác định kiểu chuyển màu là dạng hình tròn (tỏa ra từ tâm của hình chữ nhật).
++ android:startColor="@color/yellow": Màu xuất phát (nằm ở tâm) là màu vàng.
++ android:endColor="@color/green": Màu kết thúc (tỏa ra phía ngoài) là màu xanh lá.
++ android:gradientRadius="30dp": Bán kính của vòng tròn chuyển màu này là 30dp.
+--> Khi dùng android:type="radial", bạn bắt buộc phải khai báo thuộc tính gradientRadius. Nếu thiếu dòng này, ứng dụng của bạn sẽ bị văng (crash) ngay khi chạy).
